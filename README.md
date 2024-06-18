@@ -1,11 +1,10 @@
-# Looker Template for FOCUS™ v1.0 GA
 <img width="1005" alt="unnamed (1)" src="https://github.com/looker-open-source/google_cloud_focus/assets/25227290/b5be0a4b-cc2f-43fa-bbdb-9e2b64c22c8e">
 
-## FOCUS Cloud Billing View
-
+# Looker Template for FOCUS™ v1.0 GA
 Google Cloud Unveils FOCUS: Streamlining Cloud Cost Management Across Providers with a Looker Explore and Dashboard
 
-## Overview
+
+## FOCUS Cloud Billing Overview
 Google Cloud's FOCUS BigQuery view seamlessly integrates with Looker, offering businesses a unified and streamlined approach to cloud cost management across providers.
 
 ## Key Points

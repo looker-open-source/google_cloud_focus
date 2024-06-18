@@ -1,0 +1,5 @@
+connection: "@{CONNECTION}"
+include: "/explores/*.explore.lkml"
+include: "/views/*.view.lkml"
+include: "/dashboards/*.dashboard.lookml"
+include: "/datagroups/*.lkml"

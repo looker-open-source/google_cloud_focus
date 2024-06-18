@@ -1,4 +1,6 @@
-# FOCUS Cloud Billing View
+# Looker Template for FOCUS™ v1.0 GA
+
+## FOCUS Cloud Billing View
 
 Google Cloud Unveils FOCUS: Streamlining Cloud Cost Management Across Providers with a Looker Explore and Dashboard
 
@@ -16,11 +18,36 @@ Google Cloud's FOCUS BigQuery view seamlessly integrates with Looker, offering b
 - Detailed GCP Billing
 - GCP Pricing Export
 
-## LookML
-The LookML is written in BigQuery Standard SQL
+The LookML is written in BigQuery Standard SQL.
 
-Fields to change for downloading this to your instance
-1. The Pricing Export Table Alias
-2. The Detailed Export Table Alias
-3. The Date Field
-4. Connection Name you created in your Looker Instance
+## Steps to Enable Looker Template
+1. Prepare Your Looker Environment:
+	- Ensure you have permissions to create a Looker project dedicated to this analysis.
+	- Have the following information on hand:
+		- The name of your database connection in Looker.
+		- The date you want your analysis to start from.
+		- The names of the pricing and billing tables within your database.
+
+2. Download and Adapt the Repository:
+	- Create a new LookML Project and select "Clone Public Git Repository" as your starting point. Copy the following git path: https://github.com/looker-open-source/google_cloud_focus
+	- Locate the manifest file (named manifest.lkml) within the downloaded repository.
+	- Open the manifest file and modify the following constants to match your specific environment:
+		- connection: Replace with the name of your Looker database connection.
+		- date: Replace with the date you wish to start your analysis from.
+		- pricing_table: Replace with the name of your pricing table.
+		- billing_table: Replace with the name of your detailed billing table.
+3. Test Your Configuration:
+	- Navigate to the "Focus" Explore in Looker and verify that the data is loading correctly and as expected.
+4. Deploy to Production:
+	- Commit your modified LookML files.
+	- Deploy the updated LookML model to your production environment.
+5. Customize and Share:
+	- Open the "Focus" dashboard within Looker by navigating to the LookML Dashboards folder.
+	- Make a copy of the dashboard.
+	- Customize the copied dashboard to your specific needs and preferences.
+	- Share the customized dashboard with your team members or other stakeholders.
+
+## Important Notes:
+- Temporary Tables: Unlike BigQuery Views, Looker utilizes temporary tables. The provided LookML code will create and manage these tables automatically, so you won't need to create them manually.
+- Data Validation: Always double-check your data in Looker to ensure it aligns with your expectations after making changes.
+

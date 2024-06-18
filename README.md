@@ -1,20 +1,21 @@
 # Looker Template for FOCUS™ v1.0 GA
 
+
 ## FOCUS Cloud Billing View
 
 Google Cloud Unveils FOCUS: Streamlining Cloud Cost Management Across Providers with a Looker Explore and Dashboard
 
-## Overview:
+## Overview
 Google Cloud's FOCUS BigQuery view seamlessly integrates with Looker, offering businesses a unified and streamlined approach to cloud cost management across providers.
 
-## Key Points:
+## Key Points
 
 - FOCUS Looker explore transforms Google Cloud billing data into FOCUS specification, enhancing compatibility.
 - Enables querying and analyzing Google Cloud costs alongside other providers using common FOCUS format.
 - Utilizes Detailed Billing Export and Price Exports, simplifying setup for users.
 - Google Cloud's commitment to open standards enhances collaboration with customers, FinOps practitioners, and industry leaders.
 
-## Data Exports Needed for this model:
+## Data Exports Needed 
 - Detailed GCP Billing
 - GCP Pricing Export
 
@@ -47,7 +48,7 @@ The LookML is written in BigQuery Standard SQL.
 	- Customize the copied dashboard to your specific needs and preferences.
 	- Share the customized dashboard with your team members or other stakeholders.
 
-## Important Notes:
+## Important Notes
 - Temporary Tables: Unlike BigQuery Views, Looker utilizes temporary tables. The provided LookML code will create and manage these tables automatically, so you won't need to create them manually.
 - Data Validation: Always double-check your data in Looker to ensure it aligns with your expectations after making changes.
 

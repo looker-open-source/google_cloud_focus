@@ -1,5 +1,5 @@
 # Looker Template for FOCUS™ v1.0 GA
-
+<img width="1005" alt="unnamed (1)" src="https://github.com/looker-open-source/google_cloud_focus/assets/25227290/b5be0a4b-cc2f-43fa-bbdb-9e2b64c22c8e">
 
 ## FOCUS Cloud Billing View
 

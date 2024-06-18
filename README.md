@@ -16,12 +16,11 @@ Google Cloud's FOCUS BigQuery view seamlessly integrates with Looker, offering b
 - Google Cloud's commitment to open standards enhances collaboration with customers, FinOps practitioners, and industry leaders.
 
 ## Data Exports Needed 
-- Detailed GCP Billing
-- GCP Pricing Export
-
-The LookML is written in BigQuery Standard SQL.
+- Detailed Billing Export
+- Pricing Export
 
 ## Steps to Enable Looker Template
+The LookML is written in BigQuery Standard SQL.
 1. Prepare Your Looker Environment:
 	- Ensure you have permissions to create a Looker project dedicated to this analysis.
 	- Have the following information on hand:

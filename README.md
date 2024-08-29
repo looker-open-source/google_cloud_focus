@@ -28,7 +28,7 @@ The LookML is written in BigQuery Standard SQL.
 		- The names of the pricing and billing tables within your database.
 
 2. Download and Adapt the Repository:
-	- Create a new LookML Project and select "Clone Public Git Repository" as your starting point. Copy the following git path: https://github.com/looker-open-source/google_cloud_focus
+	- Create a new LookML Project and select "Clone Public Git Repository" as your starting point. Copy the following git path: git://github.com/looker-open-source/google_cloud_focus.git
 	- Locate the manifest file (named manifest.lkml) within the downloaded repository.
 	- Open the manifest file and modify the following constants to match your specific environment:
 		- connection: Replace with the name of your Looker database connection.

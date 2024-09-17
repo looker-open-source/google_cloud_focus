@@ -518,32 +518,32 @@ view: focus {
     sql: ${TABLE}.Tags ;;
   }
 
-  dimension: usage_amount {
-    type: string
-    hidden: yes
-    sql: ${TABLE}.UsageAmount ;;
-  }
+  # dimension: usage_amount {
+  #   type: string
+  #   hidden: yes
+  #   sql: ${TABLE}.UsageAmount ;;
+  # }
 
-  dimension: gc_cost {
-    type: number
-    group_label: "Google Cloud Fields"
-    label: "Google Cloud Cost"
-    hidden: yes
-    sql: ${TABLE}.gc_Cost ;;
-  }
+  # dimension: gc_cost {
+  #   type: number
+  #   group_label: "Google Cloud Fields"
+  #   label: "Google Cloud Cost"
+  #   hidden: yes
+  #   sql: ${TABLE}.gc_Cost ;;
+  # }
 
-  dimension: gc_credits {
-    type: string
-    hidden: yes
-    sql: ${TABLE}.gc_Credits ;;
-  }
+  # dimension: gc_credits {
+  #   type: string
+  #   hidden: yes
+  #   sql: ${TABLE}.gc_Credits ;;
+  # }
 
-  dimension: gc_cost_type {
-    type: string
-    group_label: "Google Cloud Fields"
-    label: "Google Cloud Cost Type"
-    sql: ${TABLE}.gc_CostType ;;
-  }
+  # dimension: gc_cost_type {
+  #   type: string
+  #   group_label: "Google Cloud Fields"
+  #   label: "Google Cloud Cost Type"
+  #   sql: ${TABLE}.gc_CostType ;;
+  # }
 
   ###### MEASURES ######
   measure: total_list_cost {
@@ -554,21 +554,21 @@ view: focus {
     sql: ${list_cost} ;;
   }
 
-  measure: total_gc_cost {
-    type: sum
-    group_label: "Google Cloud Fields"
-    label: "Total Google Cloud Cost"
-    value_format_name: usd_0
-    sql: ${gc_cost} ;;
-  }
+  # measure: total_gc_cost {
+  #   type: sum
+  #   group_label: "Google Cloud Fields"
+  #   label: "Total Google Cloud Cost"
+  #   value_format_name: usd_0
+  #   sql: ${gc_cost} ;;
+  # }
 
-  measure: total_usage_amount {
-    type: sum
-    description: "The Consumed Quantity represents the volume of a given SKU associated with a resource or service used,
-    based on the Consumed Unit."
-    value_format_name: decimal_0
-    sql: ${usage_amount} ;;
-  }
+  # measure: total_usage_amount {
+  #   type: sum
+  #   description: "The Consumed Quantity represents the volume of a given SKU associated with a resource or service used,
+  #   based on the Consumed Unit."
+  #   value_format_name: decimal_0
+  #   sql: ${usage_amount} ;;
+  # }
 }
 
 view: gc_Credits {
@@ -629,7 +629,7 @@ view: tags {
   dimension: inherited {
     type: yesno
     group_label: "Tags"
-    sql: ${TABLE}.inherited ;;
+    sql: ${TABLE}.x_inherited ;;
   }
 
   dimension: key {
@@ -641,13 +641,13 @@ view: tags {
   dimension: namespace {
     type: string
     group_label: "Tags"
-    sql:  ${TABLE}.namespace ;;
+    sql:  ${TABLE}.x_namespace ;;
   }
 
   dimension: type {
     type: string
     group_label: "Tags"
-    sql:  ${TABLE}.type ;;
+    sql:  ${TABLE}.x_type ;;
   }
 
   dimension: value {
